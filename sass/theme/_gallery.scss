@@ -1,33 +1,12 @@
-
-/*gallery images*/
-.wp-block-gallery {
-
+/*customise spoiler titles*/
+.su-spoiler-title {
+  background-color: goldenrod;
+  color: white;
 }
 
-/*gallery grid*/
-.blocks-gallery-grid {
-  align-items: center;
-
-}
-
-/*single gallery image*/
-.blocks-gallery-item {
-
-}
-
-.figure {
-  // Ensures the caption's text aligns with the image.
-  display: inline-block;
-  alignment: center;
-}
-
-.figure-img {
-  margin-bottom: $spacer / 2;
-  line-height: 1;
-}
-
-.figure-caption {
-  @include font-size($figure-caption-font-size);
-  color: $figure-caption-color;
-  alignment: center;
+/*customise acordian spoiler*/
+.custom-spoiler {
+  background-color: white;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
 }
