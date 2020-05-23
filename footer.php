@@ -21,19 +21,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-md-12">
+			<div class="col-md-12 text-center">
 
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+					<p>Jazz Club Townsville - Founded in 1995</p>
 
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
 
 			</div><!--col end -->
+
 
 		</div><!-- row end -->
 
