@@ -45,7 +45,7 @@ Based on the starter theme: [Understrap](https://github.com/understrap/understra
 2. Moving the Extracted Files to `{Wordpress Install}/wp-content/themes/2020-sp1-project-group23-cp3402`
 3. Login to your WordPress backend
 4. Go to Appearance → Themes
-5. Activate the 2020-sp1-project-group23-cp3402 theme
+5. Activate the understrap theme
 
 ---
 
