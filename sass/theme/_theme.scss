@@ -1,4 +1,24 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+/*customise spoiler titles*/
+.su-spoiler-title {
+	background-color: $main-color;
+	color: white;
+}
+
+/*customise acordian spoiler*/
+.custom-spoiler {
+	background-color: white;
+	border-top: 1px solid $black;
+	border-bottom: 1px solid $black;
+}
+
+/*download button*/
+.wp-block-file .wp-block-file__button {
+	background-color: $main-color;
+}
+
+
 .bg-primary {
 	background-color: $main-color;
 }
@@ -28,6 +48,7 @@ h3,
 
 hr {
 	color: $main-color;
+	max-width: 800px;
 }
 
 .accordion-body {
