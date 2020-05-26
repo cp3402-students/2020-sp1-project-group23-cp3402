@@ -72,16 +72,13 @@ h1.header {
 	margin-bottom: 20px;
 }
 
-.category-entry-content {
-	margin-top: 20px;
-}
-
 .entry-header {
 	margin-bottom: 20px;
 }
 
 .entry-content {
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .entry-footer {
@@ -92,4 +89,11 @@ h1.header {
 	padding-top: 1rem;
 	font-size: 1.3rem;
 	font-weight: 400;
+}
+
+div.entry-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4rem;
 }

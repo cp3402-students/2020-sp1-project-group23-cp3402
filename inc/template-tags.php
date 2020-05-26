@@ -54,10 +54,10 @@ if (!function_exists('understrap_posted_on')) {
  * Prints HTML with meta information for the categories, tags and comments.
  */
 if (!function_exists('understrap_entry_footer')) {
-	function understrap_entry_footer()
+	function understrap_entry_footer($showCategories = true, $showComments = true)
 	{
 		// Hide category and tag text for pages.
-		if ('post' === get_post_type()) {
+		if ('post' === get_post_type() && $showCategories) {
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list(esc_html__(', ', 'understrap'));
 			if ($categories_list && understrap_categorized_blog()) {
@@ -71,7 +71,7 @@ if (!function_exists('understrap_entry_footer')) {
 				printf('<span class="tags-links">' . esc_html__('Tagged %s', 'understrap') . '</span>', $tags_list); // WPCS: XSS OK.
 			}
 		}
-		if (!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
+		if (!is_single() && !post_password_required() && (comments_open() || get_comments_number()) && !$showComments) {
 			echo '<span class="comments-link">';
 			comments_popup_link(esc_html__('Leave a comment', 'understrap'), esc_html__('1 Comment', 'understrap'), esc_html__('% Comments', 'understrap'));
 			echo '</span>';

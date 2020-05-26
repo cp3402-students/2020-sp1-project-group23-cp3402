@@ -31,13 +31,18 @@ defined('ABSPATH') || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
-
 	<hr>
 
-	<div class="entry-content category-entry-content">
 
-		<?php the_excerpt(); ?>
+	<div class="entry-content category-entry-content">
+		<div class="row row-cols-2">
+			<div class="col">
+				<?php the_excerpt(); ?>
+			</div>
+			<div class="col">
+				<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+			</div>
+		</div>
 
 		<?php
 		wp_link_pages(
@@ -49,6 +54,7 @@ defined('ABSPATH') || exit;
 		?>
 
 	</div><!-- .entry-content -->
+
 
 	<footer class="entry-footer">
 
