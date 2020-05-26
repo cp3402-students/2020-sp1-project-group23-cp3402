@@ -48,7 +48,6 @@ h3,
 
 hr {
 	color: $main-color;
-	max-width: 800px;
 }
 
 .accordion-body {
@@ -87,4 +86,10 @@ h1.header {
 
 .entry-footer {
 	margin-bottom: 60px;
+}
+
+.taxonomy-description {
+	padding-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: 400;
 }
