@@ -1,65 +1,69 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 .bg-primary {
-    background-color: $main-color;
+	background-color: $main-color;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    font-size: 18px;
-    font-family: $header-font;
+	font-size: 18px;
+	font-family: $header-font;
 }
 
 p {
-    font-family: $paragraph-font;
+	font-family: $paragraph-font;
 }
 
 h2 {
-    font-size: 2rem !important;
+	font-size: 2rem !important;
 }
 
 h3,
 .su-spoiler-title {
-    font-family: $header-font !important;
-    font-size: 1rem !important;
+	font-family: $header-font !important;
+	font-size: 1rem !important;
 }
 
 #content.container {
-    max-width: 1100px;
+	max-width: 1100px;
 }
 
 hr {
-    color: $main-color;
+	color: $main-color;
 }
 
 .accordion-body {
-    font-family: $paragraph-font;
-    font-size: 1rem;
+	font-family: $paragraph-font;
+	font-size: 1rem;
 }
 
 .wp-block-button__link,
 .wp-block-file .wp-block-file__button {
-    background-color: $main-color;
+	background-color: $main-color;
 }
 
 #wrapper-navbar {
-    background-color: $main-color;
+	background-color: $main-color;
 }
 
 h1.header {
-    padding-top: 10px !important;
+	padding-top: 10px !important;
 }
 
 .category-header {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
 .category-entry-content {
-    margin-top: 20px;
+	margin-top: 20px;
 }
+
 .entry-header {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
 .entry-content {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
 .entry-footer {
-    margin-bottom: 60px;
+	margin-bottom: 60px;
 }
