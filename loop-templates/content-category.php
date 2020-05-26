@@ -24,7 +24,7 @@ defined('ABSPATH') || exit;
 		<?php if ('post' == get_post_type()) : ?>
 
 			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
+				<?php understrap_posted_on(false); ?>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
@@ -52,7 +52,15 @@ defined('ABSPATH') || exit;
 
 	<footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php edit_post_link(
+			sprintf(
+				/* translators: %s: Name of current post */
+				esc_html__('Edit %s', 'understrap'),
+				the_title('<span class="sr-only">"', '"</span>', false)
+			),
+			'<span class="edit-link">',
+			'</span>'
+		); ?>
 
 	</footer><!-- .entry-footer -->
 
