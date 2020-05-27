@@ -31,29 +31,34 @@ defined('ABSPATH') || exit;
 
 	</header><!-- .entry-header -->
 
-	<hr>
-
 
 	<div class="entry-content category-entry-content">
-		<div class="row row-cols-2">
-			<div class="col">
-				<?php the_excerpt(); ?>
-			</div>
-			<div class="col">
-				<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
-			</div>
+		<div class="category-entry-content__excerpt">
+			<?php the_excerpt();
+
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __('Pages:', 'understrap'),
+					'after'  => '</div>',
+				)
+			);
+			?>
 		</div>
 
 		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __('Pages:', 'understrap'),
-				'after'  => '</div>',
-			)
-		);
-		?>
+		$imageTag = get_the_post_thumbnail($post->ID, 'large');
+		if (!empty($imageTag)) : ?>
+			<div class="category-entry-content__image">
+				<?php echo $imageTag; ?>
+			</div>
+		<?php endif; ?>
+
+
 
 	</div><!-- .entry-content -->
+
+
+	<hr>
 
 
 	<footer class="entry-footer">
