@@ -1,22 +1,20 @@
 /*
-Theme Name: UnderStrap
-Theme URI: https://understrap.com
-Author: Holger Koenemann
-Author URI: https://www.holgerkoenemann.de
-GitHub Theme URI: https://github.com/understrap/understrap
-Description: Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid starting point for your next theme project and WordPress website. Use it as starter theme or as a parent theme. It is up to you. Including Font Awesome support, built-in widget slider and much more you need for basic websites. IMPORTANT: All developer dependencies are not bundled with this install file. Just download the .zip, extract it and run "npm install" and "gulp copy-assets" inside the extracted /understrap folder.
-That downloads everything and moves it in place so that you can recompile your CSS and JS files;
-A developer version (with Gulp/node and Sass sources) is available on gitHub: https://github.com/understrap/understrap
-A child theme is available on Github, too: https://github.com/understrap/understrap-child;
+Theme Name: Jazz Club Townsville
+Theme URI: https://github.com/cp3402-students/2020-sp1-project-group23-cp3402/blob/master/README.md
+GitHub Theme URI: https://github.com/cp3402-students/2020-sp1-project-group23-cp3402
+Author: Jordan Mellish, Alicia Libera, Peter Pannam, Kyle McInness, Tim Englart
+Author URI: https://github.com/cp3402-students/2020-sp1-project-group23-cp3402/graphs/contributors
+Description: Based on the Starter Theme Understrap. Created for the Jazz Club Townsville 
 Version: 0.9.4
-License: UnderStrap WordPress Theme, Copyright 2013-2017 Holger Koenemann
-UnderStrap is distributed under the terms of the GNU GPL version 2
+License: Jazz Club Townsville Theme for Wordpress, Copyright 2020 - CP3402 Group 23
+Jazz Club Townsville Theme is distributed under the terms of the GNU GPL version 2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: understrap
+Text Domain: jazz-club-townsville-theme
 Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 UnderStrap is based on Underscores https://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Jazz Club Theme is Based on https://understrap.com/, (C) 2013-2017 Holger Koenemann
 
 Resource Licenses:
 Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
