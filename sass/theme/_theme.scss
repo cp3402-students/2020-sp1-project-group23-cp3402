@@ -97,3 +97,13 @@ div.entry-image {
 	justify-content: center;
 	margin-bottom: 4rem;
 }
+
+.category-entry-content {
+	display: flex;
+	flex-direction: row;
+
+	&__image {
+		padding-left: 3rem;
+		min-width: 45%;
+	}
+}

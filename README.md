@@ -20,32 +20,34 @@ Based on the starter theme: [Understrap](https://github.com/understrap/understra
 **Do Not Edit The `./style.css` File as this is only used to Identify the theme within Wordpress**
 
 - Your design goes into: `./sass/theme` Folder.
+
   - Add your styles to the `./sass/theme/_theme.scss` file
   - And your variables to the `./sass/theme/_theme_variables.scss`
   - Or add other .scss files into it and `@import` it into `./sass/theme/_theme.scss`.
 
 - **NOTE FOR ANY ADDITIONAL FILES (Option 3 Above)** - Append The `@import` at the bottom of the file to prevent styling overrides.
 
- ```scss
- /*Line 1*/ @import "theme/theme_variables";
- ....
- /*Line 5*/ @import "theme/theme";
+```scss
+/*Line 1*/ @import "theme/theme_variables";
+....
+/*Line 5*/ @import "theme/theme";
 ..
 /*Last Line*/ @import "theme/your_new_style_file";
- ```
+```
 
 ---
 
 ## Installing
 
-1. Clone/Download The [Repository](https://github.com/cp3402-students/2020-sp1-project-group23-cp3402) 
-    - Using the Command in Your Terminal:  `git clone https://github.com/cp3402-students/2020-sp1-project-group23-cp3402`
-    - **Or** Downloading and Extracting the zip file [Here](https://github.com/cp3402-students/2020-sp1-project-group23-cp3402/archive/master.zip)
+1. Clone/Download The [Repository](https://github.com/cp3402-students/2020-sp1-project-group23-cp3402)
+
+   - Using the Command in Your Terminal: `git clone https://github.com/cp3402-students/2020-sp1-project-group23-cp3402`
+   - **Or** Downloading and Extracting the zip file [Here](https://github.com/cp3402-students/2020-sp1-project-group23-cp3402/archive/master.zip)
 
 2. Moving the Extracted Files to `{Wordpress Install}/wp-content/themes/2020-sp1-project-group23-cp3402`
 3. Login to your WordPress backend
 4. Go to Appearance → Themes
-5. Activate the understrap theme
+5. Activate the Theme named "Jazz Club Townsville"
 
 ---
 
@@ -58,6 +60,7 @@ Based on the starter theme: [Understrap](https://github.com/understrap/understra
 - Run: `$ npm install`
 
 ### Running
+
 To work with and compile your Sass files on the fly start:
 
 - `$ gulp watch`
