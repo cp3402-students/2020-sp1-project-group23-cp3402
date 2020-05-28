@@ -107,3 +107,19 @@ div.entry-image {
 		min-width: 45%;
 	}
 }
+
+/* History page */
+.history-table {
+	padding-right: 5%;
+}
+
+
+.history-spoiler{
+	.su-spoiler-title {
+		border-radius: 25px;
+		margin-bottom: 5px;
+		}
+	.su-spoiler-icon {
+		color: $main-color;
+	}
+}
