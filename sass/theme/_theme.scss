@@ -107,3 +107,29 @@ div.entry-image {
 		min-width: 45%;
 	}
 }
+
+/* History page */
+.history-table {
+	padding-right: 5%;
+	margin-top: 20px;
+}
+
+.history-spoiler{
+	.su-spoiler-title {
+		border-radius: 15px;
+		margin-bottom: 5px;
+		padding-top: 10px;
+		padding-bottom: 10px
+		}
+	.su-spoiler-icon {
+		color: $main-color;
+	}
+	.su-spoiler-content {
+		border-bottom: 1px solid $border-colour;
+		border-left: 1px solid $border-colour;
+		border-right: 1px solid $border-colour;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+		background-color: #f7f7f7;
+	}
+}

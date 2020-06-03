@@ -51,6 +51,27 @@ Based on the starter theme: [Understrap](https://github.com/understrap/understra
 
 ---
 
+## Wordpress Site Setup
+
+### Plugins
+
+- Shortcodes Ultimate
+
+### Content Layout
+
+> Note: Make the Home Page a Static Page in `Appearance -> Customize -> Home Page Settings`
+
+- Home Page: Static Wordpress Page Utilising Shortcodes
+- Gallery: Static Wordpress Page Utilising Shortcodes
+- Events: Category Page Aggregating Wordpress Posts with the Category: Events
+- Locations: Static Wordpress Page
+- Club History: Static Wordpress Page Utilising Shortcodes
+- Events: Category Page Aggregating Wordpress Posts with the Category: Bands
+- Locations: Static Wordpress Page
+- Join The Club: Static Wordpress Page
+
+---
+
 ## Active Development
 
 ### Installing Dependencies
@@ -64,6 +85,40 @@ Based on the starter theme: [Understrap](https://github.com/understrap/understra
 To work with and compile your Sass files on the fly start:
 
 - `$ gulp watch`
+
+---
+
+## Theme Deployment
+
+Included in the Repository is a `github-hook.php` file which will be used to update the theme on both the production and staging websites.
+
+- Within the hook file there is an array called `$hostnames` at the top of the `onPush` function implementation this is where Host Information Following the Structure
+  - The Index/Key of the Array is the Web Address of the Host
+    - The Keyed Index `wordpressPath` is where your Wordpress installation is from the root of the storage device
+    - The Keyed Index `githubBranch` is the branch of the theme repository you want your host to download
+
+An Example of this is:
+
+```php
+"Hostname/IP Address" => array(
+  "wordpressPath" => "/path/to/wordpress",
+  "githubBranch" => "master"
+)
+```
+
+> Note For Our Wordpress Sites we had to store the `github-hook.php` in a folder in the root HTTP Server called github-hook and renamed the hook to index.php so it was accessible within the Wordpress environment (eg. `/path/to/wordpress/github-hook/index.php`)
+
+Once the `github-hook.php` is setup go to the settings tab on the github repository and select "Webhooks" and then select the "Add Webhook" button
+(Repository Settings -> Webhooks -> Add Webhook)
+
+Once There Fill in the Submission Form Accordingly
+
+- `Payload URL` should be the URL you use to access the `github-hook.php` file from your browser (eg. `http://hostname/github-hook.php` or in our case `http://ec2-54-88-118-20.compute-1.amazonaws.com/github-hook/`)
+- `Content type` can be either `application/x-www-form-urlencoded` or `application/json` the webhook supports both formats
+- `Secret` should be the same as the variable `$hookSecret` at the top of `github-hook.php`
+- `Which events would you like to trigger this webhook?` only "Just the push event." should be selected as the webhook doesn't process any other events besides push events from github
+- Make Sure the `Active` checkbox is also ticked
+- Finally Add the Webhook
 
 ---
 
